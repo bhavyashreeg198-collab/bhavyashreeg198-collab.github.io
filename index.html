@@ -1,119 +1,177 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhavya Shree G | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhavya Shree G | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <img src="profile.jpg" alt="Bhavya Shree" class="profile-pic">
+<nav>
+    <div class="logo">Bhavya Shree</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <p class="intro">Hello, I'm</p>
 
         <h1>Bhavya Shree G</h1>
 
-        <p class="tagline">
-            BCA Student | Frontend Developer | Cybersecurity Enthusiast
+        <h2>
+            Frontend Developer |
+            Cybersecurity Enthusiast
+        </h2>
+
+        <p class="description">
+            BCA student specializing in Cybersecurity and Cloud Architecture.
+            Passionate about building modern web applications, secure software,
+            and solving real-world problems through technology.
         </p>
 
         <div class="buttons">
-            <a href="Bhavya_Shree_Resume.pdf" target="_blank">Resume</a>
 
-            <a href="https://www.linkedin.com/in/bhavya-shree-g-107831378/" target="_blank">
+            <a class="btn primary"
+               href="Bhavyashree.G Resume.pdf"
+               target="_blank">
+                Download Resume
+            </a>
+
+            <a class="btn secondary"
+               href="https://www.linkedin.com/in/bhavya-shree-g-107831378/"
+               target="_blank">
                 LinkedIn
             </a>
 
-            <a href="mailto:bhavyashreeg198@gmail.com">
-                Contact Me
+            <a class="btn secondary"
+               href="https://github.com/bhavyashreeg198-collab"
+               target="_blank">
+                GitHub
             </a>
+
         </div>
-    </div>
-</header>
 
-<section class="about">
-    <div class="container">
-        <h2>About Me</h2>
-
-        <p>
-            I am a BCA student specializing in Cybersecurity and Cloud Architecture.
-            I enjoy developing web applications, solving technical challenges,
-            building secure software systems, and continuously learning modern technologies.
-            My interests include Frontend Development, Cybersecurity,
-            Ethical Hacking, Cloud Computing, and Software Engineering.
-        </p>
     </div>
+
+    <div class="hero-right">
+
+        <img src="Profile.jpg" alt="Bhavya Shree">
+
+    </div>
+
 </section>
 
-<section class="skills">
-    <div class="container">
-        <h2>Technical Skills</h2>
+<section id="about">
 
-        <div class="skill-grid">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>C</span>
-            <span>C++</span>
-            <span>API Integration</span>
-            <span>GitHub</span>
-        </div>
-    </div>
+<h2 class="section-title">About Me</h2>
+
+<p class="about-text">
+I am a passionate developer with interests in Frontend Development,
+Cybersecurity, Ethical Hacking, Cloud Computing and Software Engineering.
+I enjoy transforming ideas into practical digital solutions and continuously
+expanding my technical expertise through projects and hands-on learning.
+</p>
+
 </section>
 
-<section class="projects">
-    <div class="container">
-        <h2>Projects</h2>
+<section id="skills">
 
-        <div class="project-card">
-            <h3>Quizr</h3>
-            <p>Online quiz platform with responsive user interface and interactive features.</p>
-        </div>
+<h2 class="section-title">Technical Skills</h2>
 
-        <div class="project-card">
-            <h3>AI Travel Chatbot</h3>
-            <p>Streamlit-based chatbot with trip planning, maps, route calculation and ETA prediction.</p>
-        </div>
+<div class="skills-grid">
 
-        <div class="project-card">
-            <h3>Agro Demo</h3>
-            <p>Agricultural support application providing crop insights and recommendations.</p>
-        </div>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>PHP</span>
+<span>Python</span>
+<span>Java</span>
+<span>C</span>
+<span>C++</span>
+<span>REST APIs</span>
+<span>Git & GitHub</span>
+<span>Cybersecurity</span>
+<span>Cloud Basics</span>
 
-        <div class="project-card">
-            <h3>Black Shield</h3>
-            <p>Python-based file integrity checker using SHA-256 hashing and real-time monitoring.</p>
-        </div>
+</div>
 
-        <div class="project-card">
-            <h3>News Spot</h3>
-            <p>News application built with HTML, CSS, JavaScript and GNews API integration.</p>
-        </div>
-    </div>
 </section>
 
-<section class="contact">
-    <div class="container">
-        <h2>Contact</h2>
+<section id="projects">
 
-        <p>Email: bhavyashreeg198@gmail.com</p>
+<h2 class="section-title">Featured Projects</h2>
 
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/bhavya-shree-g-107831378/" target="_blank">
-                View Profile
-            </a>
-        </p>
-    </div>
+<div class="project-grid">
+
+<div class="card">
+<h3>Quizr</h3>
+<p>Interactive online quiz platform with responsive design and user-friendly experience.</p>
+<a href="https://github.com/bhavyashreeg198-collab/Quizr" target="_blank">View Project →</a>
+</div>
+
+<div class="card">
+<h3>AI Travel Chatbot</h3>
+<p>Streamlit-powered travel assistant with route planning and ETA calculation.</p>
+<a href="https://github.com/bhavyashreeg198-collab/Chatbot" target="_blank">View Project →</a>
+</div>
+
+<div class="card">
+<h3>Agro Demo</h3>
+<p>Agriculture support application providing crop recommendations and insights.</p>
+<a href="https://github.com/bhavyashreeg198-collab/Agro-Demo" target="_blank">View Project →</a>
+</div>
+
+<div class="card">
+<h3>Black Shield</h3>
+<p>SHA-256 based file integrity monitoring system with real-time detection.</p>
+<a href="https://github.com/bhavyashreeg198-collab/bhavya-BlackShield" target="_blank">View Project →</a>
+</div>
+
+<div class="card">
+<h3>News Spot</h3>
+<p>News application built using JavaScript and GNews API integration.</p>
+<a href="https://github.com/bhavyashreeg198-collab/News-Spot" target="_blank">View Project →</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-box">
+
+<p>Email</p>
+
+<h3>
+<a href="mailto:bhavyashreeg198@gmail.com">
+bhavyashreeg198@gmail.com
+</a>
+</h3>
+
+</div>
+
 </section>
 
 <footer>
-    <p>© 2026 Bhavya Shree G</p>
+<p>© 2026 Bhavya Shree G | Portfolio</p>
 </footer>
 
 </body>
 </html>
+```
